@@ -24,5 +24,18 @@ public class Conditions {
     }
 
     System.out.println(myStr);
+
+    int num0 = 0;
+    for (int i = 0; i < myStr.capacity() - 6; i++) {
+
+      if(myStr.substring(i,i +6).equals("Oliver")) {
+        System.out.println(myStr.substring(i, i +6));
+        num0++;
+      }
+      else if (myStr.substring(i,i +6).equals("eBooks")) {
+        break;
+      }
+    }
+    System.out.println("Number of 'Oliver' in OliverTwist: " + Integer.toString(num0));
   }
 }
